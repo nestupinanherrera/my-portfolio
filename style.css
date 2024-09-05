@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.competence {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.competence h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.project {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    font-size: 14px;
+    color: #555;
+}
+
+.project-more-info {
+    display: none;
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.project:hover .project-more-info {
+    display: block;
+}
+
+.voir-projets {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.voir-projets:hover {
+    color: darkblue;
+}
+
+/* Style des boutons de navigation */
+.nav-categories {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    background-color: #292c30;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style responsive pour les catégories */
+.competence {
+    margin-bottom: 20px;
+}
+
+/* Spécifique pour les petits écrans (mobile) */
+@media (max-width: 768px) {
+    .grid-container {
+        display: block; /* Les catégories s'affichent les unes après les autres */
+    }
+
+    .nav-categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-btn {
+        width: 90%; /* Boutons plus larges sur mobile */
+        text-align: center;
+    }
+}
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+header h2 {
+    font-size: 20px;
+    color: #ccc; /* Couleur plus légère pour le sous-titre */
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 16px;
+    color: #eee;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #ffffff; /* Couleur des icônes */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
